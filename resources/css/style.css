@@ -1,3 +1,5 @@
+/* Declaration of all fonts */
+
 @font-face {
   font-family: "AlegreyaSansLight";
   src: url(../fonts/AlegreyaSans-Light.ttf) format('truetype'),
@@ -38,4 +40,103 @@
   font-family: "RalewayLight";
   src: url(../fonts/Raleway-Light.ttf) format('truetype'),
        url(../fonts/Raleway-Light.woff2) format('woff2');
+}
+
+/* Basic styling of elements */
+
+html,
+body {
+  /*font-family: Helvetica, sans-serif;*/
+  font-size: 16px;
+  margin: 0;
+  background-color: white;
+  width: 100%;
+}
+
+h1 {
+  font-family: MartelSansBold;
+  font-size: 2.5rem;
+  color: #4c4c4c;
+}
+
+h2 {
+  font-family: NunitoMedium;
+  font-size: 2rem;
+  color: #4c4c4c;
+}
+
+h3 {
+  font-family: NunitoRegular;
+  font-size: 2rem;
+  color: black;
+}
+
+p {
+  font-family: RalewayExtraLight;
+  font-size: 1.25rem;
+  color: black;
+}
+
+a {
+  font-family: RalewayLight;
+  font-size: 1.25rem;
+  color: black;
+}
+
+/* Header Section */
+
+header {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 0 0 0 1.5rem;
+  vertical-align: center;
+}
+
+.logo {
+  display: inline;
+  height: 2.5rem;
+  width: auto;
+  margin: 0;
+  padding: 0 0.25rem 0 0;
+}
+
+.brandName {
+  display: inline;
+  padding: 0;
+}
+
+.colmar {
+  font-family: AlegreyaSansRegular;
+  font-size: 2rem;
+  color: black;
+}
+
+.academy {
+  font-family: AlegreyaSansLight;
+  font-size: 2rem;
+  color: #b2b2b2;
+}
+
+nav {
+  text-align: right;
+  margin: 0 1.5rem 0 0;
+}
+
+nav a {
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
