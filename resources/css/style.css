@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "AlegreyaSansLight";
+  src: url(../fonts/AlegreyaSans-Light.ttf) format('truetype'),
+       url(../fonts/AlegreyaSans-Light.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "AlegreyaSansRegular";
+  src: url(../fonts/AlegreyaSans-Regular.ttf) format('truetype'),
+       url(../fonts/AlegreyaSans-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "MartelSansBold";
+  src: url(../fonts/MartelSans-Bold.ttf) format('truetype'),
+       url(../fonts/MartelSans-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "NunitoMedium";
+  src: url(../fonts/Nunito-Medium.ttf) format('truetype'),
+       url(../fonts/Nunito-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "NunitoRegular";
+  src: url(../fonts/Nunito-Regular.ttf) format('truetype'),
+       url(../fonts/Nunito-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "RalewayExtraLight";
+  src: url(../fonts/Raleway-ExtraLight.ttf) format('truetype'),
+       url(../fonts/Raleway-ExtraLight.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "RalewayLight";
+  src: url(../fonts/Raleway-Light.ttf) format('truetype'),
+       url(../fonts/Raleway-Light.woff2) format('woff2');
+}
