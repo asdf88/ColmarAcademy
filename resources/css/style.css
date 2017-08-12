@@ -92,6 +92,7 @@ header {
   margin: 0;
   justify-content: space-between;
   align-items: center;
+  background-color: #00BA78;
 }
 
 .brand {
@@ -124,7 +125,7 @@ header {
 .academy {
   font-family: AlegreyaSansLight;
   font-size: 2rem;
-  color: #b2b2b2;
+  color: white;
 }
 
 nav {
@@ -134,9 +135,63 @@ nav {
 
 nav a {
   text-decoration: none;
-  padding-left: 1rem;
+  margin: 0 0 0 1rem;
+  padding: 0;
+  color: white;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  border-bottom: 0.5px solid white;
+}
+
+/* Banner */
+
+.banner {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.bannerImg {
+  display: inline;
+  margin: 2rem 1.5rem;
+  width: 60%;
+  height: auto;
+  border: 2px solid black;
+}
+
+.slogan {
+  display: inline-flex;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  border: 2px solid blue;
+}
+
+.slogan h1,
+.slogan h2,
+.slogan .button {
+  display: block;
+  margin: 2rem 0;
+  border: 1px solid red;
+}
+
+.button {
+  width: 100%;
+  padding: 0.5rem 0;
+  margin: 0;
+  background-color: grey;
+  text-align: center;
+  border: 1px solid green;
+}
+
+.button p {
+  color: white;
+  border: 1px solid yellow;
 }
