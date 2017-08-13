@@ -66,6 +66,12 @@
        url(../fonts/Raleway-Medium.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: "RalewayRegular";
+  src: url(../fonts/Raleway-Regular.ttf) format('truetype'),
+       url(../fonts/Raleway-Regular.woff2) format('woff2');
+}
+
 /* Basic styling of elements */
 
 html,
@@ -95,14 +101,9 @@ h3 {
   color: black;
 }
 
-p {
-  font-family: RalewayExtraLight;
-  font-size: 1.25rem;
-  color: black;
-}
-
+p,
 a {
-  font-family: RalewayLight;
+  font-family: RalewayRegular;
   font-size: 1.25rem;
   color: black;
 }
@@ -158,6 +159,7 @@ nav {
 
 nav a {
   text-decoration: none;
+  font-family: RalewayMedium;
   margin: 0 0 0 1rem;
   padding: 0;
   color: black;
@@ -187,49 +189,167 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  align-items: flex-end;
   margin: 0;
   height: 50rem;
   width: 33%;
   background-color: grey;
-  opacity: 0.85;
-  /*filter: blur(10px);*/
+  opacity: 0.75;
   z-index: 10;
-  border: 1px solid yellow;
-}
-
-/*.bannerImg {
-  display: inline;
-  margin: 2rem 1.5rem;
-  width: 60%;
-  height: auto;
 }
 
 .slogan {
-  display: inline-flex;
-  padding: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: left;
-}*/
+  width: 60%;
+  margin-right: 5rem;
+  text-align: right;
+}
+
+.learn {
+  color: #ecd85d;
+  font-size: 6rem;
+}
+
+.latinSlogan {
+  margin-right: 5rem;
+  text-align: right;
+}
 
 .sloganBox h1,
 .sloganBox h2,
 .sloganBox .button {
   display: block;
   margin: 2rem auto;
-  border: 2px solid blue;
+  line-height: 1.2;
+  color: white;
 }
 
-.button {
-  width: 30%;
-  padding: 0.5rem 0;
+.button a {
+  font-family: RalewayMedium;
+  font-size: 1.5rem;
+  color: black;
+  padding: 0.75rem 2rem;
   margin: 0;
-  background-color: grey;
+  background-color: #ecd85d;
   text-align: center;
 }
 
-.button p {
-  color: white;
-}*/
+.button a:hover {
+  background-color: hsl(52, 100%, 85%);
+}
+
+.button a:active {
+  background-color: #ECD000;
+}
+
+/* Main Information */
+
+.main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.motivate {
+  display: inline-flex;
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.motivate .informationMain,
+.motivate h2,
+.motivate p {
+  display: block;
+}
+
+.informationMain {
+  width: 95%;
+  height: auto;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.text {
+  width: 95%;
+  text-align: left;
+  padding: 0;
+  margin: 1.5rem auto;
+}
+
+.motivate h2 {
+  padding-bottom: 1.5rem;
+  font-size: 3rem;
+}
+
+.motivate .quote {
+  font-family: RalewayRegular;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.source {
+  font-size: 1rem;
+  padding: 2.5rem 0 2rem 0;
+}
+
+.about {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+  border-left: 0.5px solid grey;
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+}
+
+.orientation,
+.campus,
+.lecture {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 0.5px solid grey;
+  border-bottom: 0.5px solid grey;
+}
+
+.orientation:hover {
+  background-color: #FEFBE7;
+  border: none;
+}
+
+.campus:hover {
+  background-color: #FEFBE7;
+  border: none;
+}
+
+.lecture:hover {
+  background-color: #FEFBE7;
+  border: none;
+}
+
+.orientation img,
+.campus img,
+.lecture img {
+  width: 35%;
+  height: auto;
+  padding: 1rem 1.5rem;
+}
+
+.orientation p,
+.campus p,
+.lecture p {
+  font-family: RalewayRegular;
+  padding: 2rem 0;
+  display: block;
+}
+
+.what a {
+  text-decoration: none;
+  color: #627aac;
+  display: block;
+}
+
+.what a:hover {
+  font-family: RalewayMedium;
+  color: #3B5998;
+}
