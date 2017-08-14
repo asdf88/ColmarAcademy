@@ -96,8 +96,14 @@ h2 {
 }
 
 h3 {
+  font-family: RalewayBold;
+  font-size: 1.5rem;
+  color: #4c4c4c;
+}
+
+h4 {
   font-family: NunitoRegular;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: black;
 }
 
@@ -199,7 +205,8 @@ nav a:hover {
   border: 1px solid red;
 }
 
-.slogan {
+.slogan,
+.latinSlogan {
   width: 80%;
   margin-right: 4rem;
   text-align: right;
@@ -209,11 +216,6 @@ nav a:hover {
 .learn {
   color: #ecd85d;
   font-size: 6rem;
-}
-
-.latinSlogan {
-  margin-right: 4rem;
-  text-align: right;
 }
 
 .sloganBox h1,
@@ -244,104 +246,104 @@ nav a:hover {
 }
 
 /* Main Information */
-
-.main {
+/* Renaming .main into pagesplitterSixtyForty */
+.pagesplitterSixtyForty {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  /*justify-content: space-between;
+  align-content: flex-start;*/
+  align-items: flex-start;
+  border: 1px solid blue;
 }
 
-.motivate {
+/* Renaming .motivate into sixtyPercent */
+.sixtyPercent {
   display: inline-flex;
   width: 60%;
   flex-direction: column;
   align-items: center;
+  /* justify-content is a new addition */
+  justify-content: flex-start;
   margin: 0;
+  border: 2px solid red;
 }
 
-.motivate .informationMain,
-.motivate h2,
-.motivate p {
+/*.sixtyPercent .informationMain,
+.sixtyPercent h2,
+.sixtyPercent p {
   display: block;
-}
+}*/
 
-.informationMain {
+.imgMain {
   width: 95%;
   height: auto;
-  margin: 2rem 0 1.5rem 0;
+  /*margin: 2rem 0 1.5rem 0;*/
+  margin: 1.5rem auto;
+  border: 2px solid yellow;
 }
 
 .text {
   width: 95%;
   text-align: left;
   padding: 0;
-  margin: 1.5rem auto;
+  /*margin: 1.5rem auto;*/
+  margin: 1.5 auto;
+  border: 2px solid yellow;
 }
 
-.motivate h2 {
+.text h2 {
   padding-bottom: 1.5rem;
   font-size: 3rem;
 }
 
-.motivate .quote {
-  font-family: RalewayRegular;
-  font-size: 1.5rem;
+.text .quote {
+  font-size: 1.25rem;
   line-height: 1.4;
+  padding: 0; 
 }
 
 .source {
   font-size: 1rem;
-  padding: 2.5rem 0 2rem 0;
+  padding: 2rem 0;
 }
 
-.about {
+/* Renaming .about into fortyPercent */
+.fortyPercent {
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 40%;
   border-left: 0.5px solid grey;
-  margin: 0.5rem 0;
+  margin: 0;
+  /*margin: 0.5rem 0;*/
   padding: 0 0.5rem;
+  border: 2px solid green;
 }
 
-.orientation,
-.campus,
-.lecture {
+.featureBox {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   border-top: 0.5px solid grey;
   border-bottom: 0.5px solid grey;
+  margin-top: 0.5rem;
 }
 
-.orientation:hover {
+.featureBox:hover {
   background-color: #FEFBE7;
   border: none;
 }
 
-.campus:hover {
-  background-color: #FEFBE7;
-  border: none;
-}
-
-.lecture:hover {
-  background-color: #FEFBE7;
-  border: none;
-}
-
-.orientation img,
-.campus img,
-.lecture img {
+.featureBox img {
   width: 35%;
   height: auto;
   padding: 1rem 1.5rem;
 }
 
-.orientation p,
-.campus p,
-.lecture p {
+.what p {
   font-family: RalewayRegular;
-  padding: 2rem 0;
+  font-size: 1rem;
+  padding: 1.5rem 0;
   display: block;
 }
 
@@ -411,7 +413,103 @@ nav a:hover {
   border: 1px solid orange;
 }
 
+.courseDescription h3 {
+  font-family: RalewayBold;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .courseDescription p {
   padding-top: 1rem;
   line-height: 1.2;
+}
+
+/* Thesis exhibit */
+
+.thesisExhibit {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid yellow;
+}
+
+.thesisExhibit h1 {
+  margin: 2.5rem 0;
+}
+
+/*.sectionTitle {
+  display: flex;
+  padding: 0;
+  margin: 2rem auto;
+  justify-content: center;
+  border: 1px solid green;
+}*/
+
+.exhibitsContainer {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid black;
+}
+
+/*.videoContainer {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 54%;
+  margin-right: 0.75rem;
+  border: 1px solid purple;
+}*/
+
+.sixtyPercent video {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.urban {
+  width: 100%;
+  padding: 0;
+  margin: 1.5rem 0 2rem 0;
+  border: 1px solid blue;
+}
+
+.urban h3 {
+  font-family: RalewayBold;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.urban p {
+  line-height: 1.2;
+}
+
+
+/*.exhibitExamples {
+  display: inline-flex;
+  width: 36%;
+  margin-left: 0.75rem;
+  border: 1px solid brown;
+  flex-direction: column;
+  justify-content: flex-start;
+}*/
+
+.fisma,
+.nowthen {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 0.5px solid grey;
+  border-bottom: 0.5px solid grey;
+}
+
+.fisma img,
+.nowthen img {
+  width: 35%;
+  height: auto;
+  padding: 1rem 1.5rem;
 }
