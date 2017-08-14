@@ -196,12 +196,14 @@ nav a:hover {
   background-color: grey;
   opacity: 0.75;
   z-index: 10;
+  border: 1px solid red;
 }
 
 .slogan {
-  width: 60%;
-  margin-right: 5rem;
+  width: 80%;
+  margin-right: 4rem;
   text-align: right;
+  border: 1px solid blue;
 }
 
 .learn {
@@ -210,7 +212,7 @@ nav a:hover {
 }
 
 .latinSlogan {
-  margin-right: 5rem;
+  margin-right: 4rem;
   text-align: right;
 }
 
@@ -352,4 +354,64 @@ nav a:hover {
 .what a:hover {
   font-family: RalewayMedium;
   color: #3B5998;
+}
+
+/* Courses */
+
+.coursesSection {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #e4e4e4;
+}
+
+.coursesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid red;
+}
+
+.coursesContainer h1 {
+  padding: 2.5rem 0 2rem 0;
+}
+
+.rowOne,
+.rowTwo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 2rem;
+  border: 1px solid blue;
+}
+
+.courseBox {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: flex-start;
+  padding: 0;
+  border: 1px solid green;
+  background-color: white;
+}
+
+.courseBox img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.courseDescription {
+  padding: 0;
+  margin: 1rem 1rem 1rem;
+  border: 1px solid orange;
+}
+
+.courseDescription p {
+  padding-top: 1rem;
+  line-height: 1.2;
 }
