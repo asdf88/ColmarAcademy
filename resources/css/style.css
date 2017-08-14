@@ -214,7 +214,7 @@ nav a:hover {
 }
 
 .learn {
-  color: #ecd85d;
+  color: /*#ecd85d*/#fcb514;
   font-size: 6rem;
 }
 
@@ -233,7 +233,7 @@ nav a:hover {
   color: black;
   padding: 0.75rem 2rem;
   margin: 0;
-  background-color: #ecd85d;
+  background-color: /*#ecd85d*/#fcb514;
   text-align: center;
 }
 
@@ -254,6 +254,7 @@ nav a:hover {
   align-content: flex-start;*/
   align-items: flex-start;
   border: 1px solid blue;
+  margin-bottom: 0.5rem;
 }
 
 /* Renaming .motivate into sixtyPercent */
@@ -274,7 +275,7 @@ nav a:hover {
   display: block;
 }*/
 
-.imgMain {
+.mediaMain {
   width: 95%;
   height: auto;
   /*margin: 2rem 0 1.5rem 0;*/
@@ -297,9 +298,9 @@ nav a:hover {
 }
 
 .text .quote {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 1.4;
-  padding: 0; 
+  padding: 0;
 }
 
 .source {
@@ -311,7 +312,7 @@ nav a:hover {
 .fortyPercent {
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   width: 40%;
   border-left: 0.5px solid grey;
   margin: 0;
@@ -327,10 +328,11 @@ nav a:hover {
   border-top: 0.5px solid grey;
   border-bottom: 0.5px solid grey;
   margin-top: 0.5rem;
+  padding-right: 1rem;
 }
 
 .featureBox:hover {
-  background-color: #FEFBE7;
+  background-color: /*#FEFBE7*/#fcb514;
   border: none;
 }
 
@@ -342,12 +344,13 @@ nav a:hover {
 
 .what p {
   font-family: RalewayRegular;
-  font-size: 1rem;
-  padding: 1.5rem 0;
+  /*font-size: 1rem;*/
+  padding-top: 1.25rem;
   display: block;
 }
 
 .what a {
+  padding-top: 1.25rem;
   text-decoration: none;
   color: #627aac;
   display: block;
@@ -399,6 +402,12 @@ nav a:hover {
   padding: 0;
   border: 1px solid green;
   background-color: white;
+  transition: all 0.1s;
+}
+
+.courseBox:hover {
+  transform: scale(1.1);
+  box-shadow: 8px 8px 8px darkgrey;
 }
 
 .courseBox img {
@@ -440,6 +449,11 @@ nav a:hover {
   margin: 2.5rem 0;
 }
 
+.sixtyPercent .text p {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  padding: 0.75rem 0 2rem 0;
+}
 /*.sectionTitle {
   display: flex;
   padding: 0;
@@ -448,13 +462,13 @@ nav a:hover {
   border: 1px solid green;
 }*/
 
-.exhibitsContainer {
+/*.exhibitsContainer {
   display: flex;
   width: 90%;
   justify-content: center;
   align-items: flex-start;
   border: 1px solid black;
-}
+}*/
 
 /*.videoContainer {
   display: inline-flex;
@@ -465,28 +479,28 @@ nav a:hover {
   border: 1px solid purple;
 }*/
 
-.sixtyPercent video {
-  width: 100%;
-  height: auto;
-  margin: 0;
-}
+/*.sixtyPercent video {
+  width: 95%;
+  height: auto;*/
+  /*margin: 2rem 0 1.5rem 0;*/
+  /*margin: 1.5rem auto;
+  border: 2px solid yellow;
+}*/
 
-.urban {
-  width: 100%;
-  padding: 0;
-  margin: 1.5rem 0 2rem 0;
-  border: 1px solid blue;
-}
-
-.urban h3 {
+/*.urban h3 {
   font-family: RalewayBold;
   font-size: 1.5rem;
   padding-bottom: 1rem;
 }
 
+.text h2 {
+  padding-bottom: 1.5rem;
+  font-size: 3rem;
+}
+
 .urban p {
   line-height: 1.2;
-}
+}*/
 
 
 /*.exhibitExamples {
@@ -498,7 +512,7 @@ nav a:hover {
   justify-content: flex-start;
 }*/
 
-.fisma,
+/*.fisma,
 .nowthen {
   display: flex;
   justify-content: flex-start;
@@ -512,4 +526,30 @@ nav a:hover {
   width: 35%;
   height: auto;
   padding: 1rem 1.5rem;
+}*/
+
+/* Footer section */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10rem;
+  background-color: #fcb514;
+}
+
+footer p,
+footer div {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+footer a:hover {
+  font-family: RalewayMedium;
 }
