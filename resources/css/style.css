@@ -175,6 +175,10 @@ nav a:hover {
   border-bottom: 0.5px solid black;
 }
 
+.menu {
+  display: none;
+}
+
 /* Banner */
 
 .banner {
@@ -182,13 +186,13 @@ nav a:hover {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 50rem;
+  /*height: 45rem;*/
   justify-content: flex-start;
   align-items: center;
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 0;
+  /*z-index: 0;*/
 }
 
 .sloganBox {
@@ -197,20 +201,28 @@ nav a:hover {
   justify-content: center;
   align-items: flex-end;
   margin: 0;
-  height: 50rem;
+  /*height: 45rem;*/
   width: 33%;
   background-color: grey;
   opacity: 0.75;
-  z-index: 10;
+  /*z-index: 10;*/
   border: 1px solid red;
 }
 
 .slogan,
 .latinSlogan {
   width: 80%;
-  margin-right: 4rem;
   text-align: right;
   border: 1px solid blue;
+}
+
+.slogan {
+  margin: 4rem 3rem 2rem 0;
+}
+
+.latinSlogan,
+.button {
+  margin: 0 3rem 4rem 0;
 }
 
 .learn {
@@ -218,31 +230,71 @@ nav a:hover {
   font-size: 6rem;
 }
 
-.sloganBox h1,
-.sloganBox h2,
-.sloganBox .button {
-  display: block;
-  margin: 2rem auto;
+.slogan h1,
+.latinSlogan h2 {
   line-height: 1.2;
   color: white;
+}
+.slogan h1 {
+  font-size: 3.5rem;
+}
+
+.button {
+  display: flex;
+  width: 15rem;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcb514;
 }
 
 .button a {
   font-family: RalewayMedium;
   font-size: 1.5rem;
   color: black;
-  padding: 0.75rem 2rem;
-  margin: 0;
-  background-color: /*#ecd85d*/#fcb514;
-  text-align: center;
 }
 
-.button a:hover {
+.button:hover {
   background-color: hsl(52, 100%, 85%);
 }
 
-.button a:active {
+.button:active {
   background-color: #ECD000;
+}
+
+@media only screen and (max-width: 1200px) {
+  .banner {
+    align-items: flex-end;
+    height: 50rem;
+  }
+  .sloganBox {
+    width: 100%;
+    min-height: 45%;
+    align-items: center;
+  }
+  .slogan,
+  .latinSlogan {
+    width: 95%;
+    margin: 1rem auto;
+  }
+  .button {
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+  }
+  .slogan h1 {
+    font-size: 4rem;
+  }
+  .latinSlogan h2 {
+    font-size: 2.5rem;
+  }
+  .learn {
+    font-size: 5rem;
+  }
+  .slogan h1,
+  .latinSlogan h2 {
+    padding: 1rem 0;
+    line-height: 1;
+  }
 }
 
 /* Main Information */
@@ -361,6 +413,28 @@ nav a:hover {
   color: #3B5998;
 }
 
+@media only screen and (max-width: 1200px) {
+  .pagesplitterSixtyForty {
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #e4e4e4;
+    margin-bottom: 0;
+  }
+  .sixtyPercent {
+    display: flex;
+    width: 80%;
+    background-color: white;
+    margin-top: 0.5rem;
+  }
+  .fortyPercent {
+    display: flex;
+    width: 80%;
+    background: white;
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
 /* Courses */
 
 .coursesSection {
@@ -431,6 +505,21 @@ nav a:hover {
 .courseDescription p {
   padding-top: 1rem;
   line-height: 1.2;
+}
+
+@media only screen and (max-width: 1000px) {
+  .coursesContainer {
+    width: 90%;
+  }
+  .rowOne,
+  .rowTwo {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .courseBox {
+    min-width: 16rem;
+    margin: 1rem;
+  }
 }
 
 /* Thesis exhibit */
