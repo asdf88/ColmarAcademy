@@ -577,7 +577,8 @@ nav img {
   .sixtyPercent {
     width: 100%;
     align-items: center;
-    padding-bottom: 1rem; 
+    padding: 1rem 0;
+    background-color: #e9e9e9;
   }
 
   .featureBox {
@@ -586,6 +587,8 @@ nav img {
     justify-content: flex-start;
     align-items: center;
     padding: 0;
+    margin-bottom: 0.5rem;
+    background-color: white;
   }
 
   .featureBox img {
@@ -616,9 +619,22 @@ nav img {
     font-size: 1rem;
     padding: 0 0 1rem 1rem;
   }
+
+  .featureBox {
+    transition: all 0.1s;
+  }
+
+  .featureBox:hover {
+    transform: scale(1.025);
+    box-shadow: 5px 5px 5px darkgrey;
+    background-color: white;
+  }
 }
 
 /* Courses */
+.phoneCourseContainerBox {
+  display: none;
+}
 
 .coursesSection {
   width: 100%;
@@ -724,6 +740,122 @@ nav img {
     max-width: 75%;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .coursesSection {
+    background-color: white;
+  }
+
+  .coursesContainer {
+    width: 100%;
+  }
+
+  .coursesContainer h1 {
+    font-size: 3rem;
+    padding: 2rem 0;
+  }
+
+  .courseBoxContainer {
+    display: none;
+  }
+
+  .phoneCourseContainerBox {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .courseDropdown {
+    /*position: relative;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
+    background-color: #e9e9e9;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .courseDropdown span {
+    font-family: RalewayBold;
+    color: #4c4c4c;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    border: 1px solid red;
+  }
+
+  .softwareEngineering {
+    background-image: url(../images/course-software.jpg);
+  }
+
+  .computerArt {
+    background-image: url(../images/course-computer-art.jpg);
+  }
+
+  .design {
+    background-image: url(../images/course-design.jpg);
+  }
+
+  .data {
+    background-image: url(../images/course-data.jpg);
+  }
+
+  .business {
+    background-image: url(../images/course-business.jpg);
+  }
+
+  .marketing {
+    background-image: url(../images/course-marketing.jpg);
+  }
+
+  .courseContent {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    z-index: 1;
+    border: 1px solid green;
+    transition: display 0.5s;
+  }
+
+  .colorSheet {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #e9e9e9;
+    opacity: 0.75;
+  }
+
+  .courseContent p {
+    margin: 0;
+    padding: 1rem 1rem;
+    font-family: RalewayBold;
+    font-size: 1.5rem;
+    color: black;
+    border: 1px solid blue;
+  }
+
+  .courseDropdown:hover .courseContent {
+    display: block;
+  }
+
+  .courseDropdown:hover {
+    background-color: #fcb514;
+  }
+
+}
+
 
 /*@media only screen and (max-width: 1000px) {
   .coursesContainer {
