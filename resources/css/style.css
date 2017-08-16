@@ -123,6 +123,7 @@ header {
   margin: 0;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 3px solid lightgrey; 
 }
 
 .brand {
@@ -229,7 +230,15 @@ nav img {
   /*z-index: 0;*/
 }
 
-.sloganBox {
+.phoneBanner {
+  display: none;
+}
+
+.phoneSloganBox {
+  display: none;
+}
+
+.desktopSloganBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,7 +310,7 @@ nav img {
     align-items: flex-end;
     height: 50rem;
   }
-  .sloganBox {
+  .desktopSloganBox {
     width: 100%;
     min-height: 45%;
     align-items: center;
@@ -328,6 +337,90 @@ nav img {
   .latinSlogan h2 {
     padding: 1rem 0;
     line-height: 1;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    display: none;
+  }
+
+  .phoneBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .phoneBannerImg {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .desktopSloganBox {
+    display: none;
+  }
+
+  .phoneSloganBox {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcb514;
+    opacity: 0.75;
+  }
+
+  .phoneSloganBox .slogan,
+  .phoneSloganBox .latinSlogan,
+  .phoneSloganBox .button {
+    width: 90%;
+    text-align: left;
+    padding: 0;
+  }
+
+  .phoneSloganBox .slogan,
+  .phoneSloganBox .latinSlogan {
+    margin: 0 auto;
+  }
+
+  .phoneSloganBox .slogan h1,
+  .phoneSloganBox .slogan .learn {
+    font-size: 2rem;
+    color: white;
+    line-height: 1.1;
+  }
+
+  .phoneSloganBox .latinSlogan h2 {
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.1;
+  }
+
+  .phoneSloganBox .button {
+    height: 2.5rem;
+    background-color: white;
+    margin: 1rem auto;
+  }
+
+  .phoneSloganBox .button:hover {
+    background-color: lightgrey;
+  }
+
+  .phoneSloganBox .button a {
+    font-size: 1rem;
+    color: #4c4c4c;
+  }
+
+  .phoneSloganBox .button a:hover {
+    font-family: RalewayBold;
   }
 }
 
@@ -689,25 +782,96 @@ nav img {
 /* Footer section */
 
 footer {
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;*/
   width: 100%;
-  height: 10rem;
-  background-color: #fcb514;
+  height: 20rem;
+  background-image: url(../images/books.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid white;
+  margin: 0;
+  padding: 0;
 }
 
-footer p,
-footer div {
+.backgroundColor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #0039AF;
+  opacity: 0.75;
+  margin: 0;
+  padding: 0;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  border: 2px solid black;
+  padding: 0;
+}
+
+.socialMedia .fa-facebook,
+.socialMedia .fa-twitter,
+.socialMedia .fa-instagram,
+.socialMedia .fa-youtube {
+  color: white;
+  padding: 0 2rem;
+}
+
+.socialMedia .phone {
+  display: none;
+}
+
+.terms {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.terms p,
+.terms div {
   padding: 1rem 1.5rem;
   font-size: 1rem;
+  color: white;
 }
 
-footer a {
+.terms a {
   text-decoration: none;
   padding-left: 1rem;
   font-size: 1rem;
+  color: white;
 }
 
-footer a:hover {
+.terms a:hover {
   font-family: RalewayMedium;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    height: 12rem;
+  }
+  .socialMedia .desktop {
+    display: none;
+  }
+  .socialMedia .phone {
+    display: inline;
+  }
+  .socialMedia .fa-facebook,
+  .socialMedia .fa-twitter,
+  .socialMedia .fa-instagram,
+  .socialMedia .fa-youtube {
+    padding: 0 1rem;
+  }
+  .terms p,
+  .terms a {
+    font-size: 0.75rem;
+  }
 }
