@@ -1,4 +1,4 @@
-/* Declaration of all fonts */
+/* Introducing all fonts */
 
 @font-face {
   font-family: "AlegreyaSansLight";
@@ -13,39 +13,15 @@
 }
 
 @font-face {
-  font-family: "MartelSansBold";
-  src: url(../fonts/MartelSans-Bold.ttf) format('truetype'),
-       url(../fonts/MartelSans-Bold.woff2) format('woff2');
+  font-family: "RalewayRegular";
+  src: url(../fonts/Raleway-Regular.ttf) format('truetype'),
+       url(../fonts/Raleway-Regular.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: "NunitoMedium";
-  src: url(../fonts/Nunito-Medium.ttf) format('truetype'),
-       url(../fonts/Nunito-Medium.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: "NunitoRegular";
-  src: url(../fonts/Nunito-Regular.ttf) format('truetype'),
-       url(../fonts/Nunito-Regular.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: "RalewayExtraLight";
-  src: url(../fonts/Raleway-ExtraLight.ttf) format('truetype'),
-       url(../fonts/Raleway-ExtraLight.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: "RalewayLight";
-  src: url(../fonts/Raleway-Light.ttf) format('truetype'),
-       url(../fonts/Raleway-Light.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: "RalewayBlack";
-  src: url(../fonts/Raleway-Black.ttf) format('truetype'),
-       url(../fonts/Raleway-Black.woff2) format('woff2');
+  font-family: "RalewayMedium";
+  src: url(../fonts/Raleway-Medium.ttf) format('truetype'),
+       url(../fonts/Raleway-Medium.woff2) format('woff2');
 }
 
 @font-face {
@@ -60,23 +36,10 @@
        url(../fonts/Raleway-ExtraBold.woff2) format('woff2');
 }
 
-@font-face {
-  font-family: "RalewayMedium";
-  src: url(../fonts/Raleway-Medium.ttf) format('truetype'),
-       url(../fonts/Raleway-Medium.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: "RalewayRegular";
-  src: url(../fonts/Raleway-Regular.ttf) format('truetype'),
-       url(../fonts/Raleway-Regular.woff2) format('woff2');
-}
-
 /* Basic styling of elements */
 
 html,
 body {
-  /*font-family: Helvetica, sans-serif;*/
   font-size: 16px;
   margin: 0;
   background-color: white;
@@ -221,13 +184,11 @@ nav img {
   margin: 0;
   padding: 0;
   width: 100%;
-  /*height: 45rem;*/
   justify-content: flex-start;
   align-items: center;
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /*z-index: 0;*/
 }
 
 .phoneBanner {
@@ -244,11 +205,9 @@ nav img {
   justify-content: center;
   align-items: flex-end;
   margin: 0;
-  /*height: 45rem;*/
   width: 33%;
   background-color: grey;
   opacity: 0.75;
-  /*z-index: 10;*/
   border: 1px solid red;
 }
 
@@ -269,7 +228,7 @@ nav img {
 }
 
 .learn {
-  color: /*#ecd85d*/#fcb514;
+  color: #fcb514;
   font-size: 6rem;
 }
 
@@ -394,13 +353,13 @@ nav img {
   .phoneSloganBox .slogan h1,
   .phoneSloganBox .slogan .learn {
     font-size: 2rem;
-    color: white;
+    color: #4c4c4c;
     line-height: 1.1;
   }
 
   .phoneSloganBox .latinSlogan h2 {
     font-size: 1.5rem;
-    color: white;
+    color: #4c4c4c;
     line-height: 1.1;
   }
 
@@ -425,39 +384,28 @@ nav img {
 }
 
 /* Main Information */
-/* Renaming .main into pagesplitterSixtyForty */
+
 .pagesplitterSixtyForty {
   display: flex;
   width: 100%;
-  /*justify-content: space-between;
-  align-content: flex-start;*/
   align-items: flex-start;
   border: 1px solid blue;
-  /*margin-bottom: 0.5rem;*/
+  padding: 2rem 0;
 }
 
-/* Renaming .motivate into sixtyPercent */
 .sixtyPercent {
   display: inline-flex;
   width: 60%;
   flex-direction: column;
   align-items: center;
-  /* justify-content is a new addition */
   justify-content: flex-start;
   margin: 0;
   border: 2px solid red;
 }
 
-/*.sixtyPercent .informationMain,
-.sixtyPercent h2,
-.sixtyPercent p {
-  display: block;
-}*/
-
 .mediaMain {
   width: 95%;
   height: auto;
-  /*margin: 2rem 0 1.5rem 0;*/
   margin: 1.5rem auto;
   border: 2px solid yellow;
 }
@@ -466,7 +414,6 @@ nav img {
   width: 95%;
   text-align: left;
   padding: 0;
-  /*margin: 1.5rem auto;*/
   margin: 1.5 auto;
   border: 2px solid yellow;
 }
@@ -487,15 +434,12 @@ nav img {
   padding: 2rem 0;
 }
 
-/* Renaming .about into fortyPercent */
 .fortyPercent {
   display: inline-flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
   width: 40%;
   border-left: 0.5px solid grey;
   margin: 0;
-  /*margin: 0.5rem 0;*/
   padding: 0 0.5rem;
   border: 2px solid green;
 }
@@ -512,7 +456,7 @@ nav img {
 }
 
 .featureBox:hover {
-  background-color: /*#FEFBE7*/#fcb514;
+  background-color: #fcb514;
   border: 0.5px solid #fcb514;
 }
 
@@ -537,9 +481,7 @@ nav img {
 
 .what p {
   font-family: RalewayRegular;
-  /*font-size: 1rem;*/
   padding-top: 1.25rem;
-  /*padding: 5% 0;*/
   display: block;
   line-height: 1.2;
 }
@@ -567,26 +509,20 @@ nav img {
     display: flex;
     width: 80%;
     background-color: white;
-    /*margin-top: 0.5rem;*/
   }
   .fortyPercent {
     display: flex;
     width: 80%;
     background: white;
     padding: 0;
-    /*margin-bottom: 0.5rem;*/
   }
   .what h4 {
     font-size: 2rem;
     color: #4c4c4c;
   }
   .what p {
-    /*padding: 2.5rem 0;*/
     font-size: 1.5rem;
   }
-  /*.what a {
-    padding: 0;
-  }*/
 }
 
 @media only screen and (max-width: 680px) {
@@ -634,16 +570,6 @@ nav img {
     font-size: 1rem;
     padding: 0 0 1rem 1rem;
   }
-
-  /*.featureBox {
-    transition: all 0.1s;
-  }
-
-  .featureBox:hover {
-    transform: scale(1.025);
-    box-shadow: 5px 5px 5px darkgrey;
-    background-color: white;
-  }*/
 }
 
 @media only screen and (max-width: 480px) {
@@ -652,9 +578,9 @@ nav img {
     display: none;
   }
 
-  .pagesplitterSixtyForty {
+  /*.pagesplitterSixtyForty {
     margin-bottom: 2rem;
-  }
+  }*/
 
   .fortyPercent,
   .sixtyPercent {
@@ -665,43 +591,8 @@ nav img {
   }
 
   .featureBox {
-    /*flex-direction: column;*/
     width: 90%;
-    /*justify-content: flex-start;
-    align-items: center;
-    padding: 0;
-    margin-bottom: 0.5rem;
-    background-color: white;*/
   }
-
-  /*.featureBox img {
-    object-fit: cover;
-    width: 100%;
-    height: 12rem;
-    padding: 0;
-    margin: 0;
-  }
-
-  .what {
-    width: 100%;
-  }
-
-  .what h4 {
-    font-family: RalewayBold;
-    font-size: 1.5rem;
-    color: #4c4c4c;
-    padding: 1rem 0 0 1rem;
-  }
-
-  .what p {
-    font-size: 1.25rem;
-    padding: 1rem 1rem;
-  }
-
-  .what a {
-    font-size: 1rem;
-    padding: 0 0 1rem 1rem;
-  }*/
 
   .featureBox {
     transition: all 0.1s;
@@ -721,8 +612,7 @@ nav img {
 
 .coursesSection {
   width: 100%;
-  padding: 0;
-  margin: 0;
+  padding: 2rem 0;
   background-color: #e4e4e4;
 }
 
@@ -745,7 +635,6 @@ nav img {
   justify-content: center;
   width: 100%;
   padding: 0;
-  /*margin: 1rem 0;*/
   border: 1px solid blue;
   flex-flow: row wrap;
 }
@@ -762,27 +651,6 @@ nav img {
   max-width: 31%;
   min-width: 16rem;
 }
-
-/*.rowOne,
-.rowTwo {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 2rem;
-  border: 1px solid blue;
-}
-
-.courseBox {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  justify-content: flex-start;
-  padding: 0;
-  border: 1px solid green;
-  background-color: white;
-  transition: all 0.1s;
-}*/
 
 .courseBox:hover {
   transform: scale(1.1);
@@ -828,23 +696,18 @@ nav img {
   .coursesContainer h1,
   .thesisExhibit h1 {
     font-size: 3rem;
-    margin: 2rem 0;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .coursesSection {
     background-color: white;
+    padding: 0;
   }
 
   .coursesContainer {
     width: 100%;
   }
-
-  /*.coursesContainer h1 {
-    font-size: 3rem;
-    padding: 2rem 0;
-  }*/
 
   .courseBoxContainer {
     display: none;
@@ -861,7 +724,6 @@ nav img {
   }
 
   .courseDropdown {
-    /*position: relative;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -953,27 +815,11 @@ nav img {
   }
 }
 
-/*@media only screen and (max-width: 1000px) {
-  .coursesContainer {
-    width: 90%;
-  }
-  .rowOne,
-  .rowTwo {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .courseBox {
-    min-width: 16rem;
-    margin: 1rem;
-  }
-}*/
-
 /* Thesis exhibit */
 
 .thesisExhibit {
   width: 100%;
   padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -981,7 +827,7 @@ nav img {
 }
 
 .thesisExhibit h1 {
-  margin: 2.5rem 0;
+  margin: 2.5rem 0 1rem 0;
 }
 
 .sixtyPercent .text p {
@@ -991,10 +837,9 @@ nav img {
 }
 
 @media only screen and (max-width: 480px) {
-  /*.thesisExhibit h1 {
-    font-size: 3rem;
-    margin: 2rem;
-  }*/
+  .thesisExhibit .pagesplitterSixtyForty {
+    background-color: white;
+  }
 
   .thesisVideoContainer {
     padding: 0;
@@ -1012,85 +857,10 @@ nav img {
     display: none;
   }
 }
-/*.sectionTitle {
-  display: flex;
-  padding: 0;
-  margin: 2rem auto;
-  justify-content: center;
-  border: 1px solid green;
-}*/
-
-/*.exhibitsContainer {
-  display: flex;
-  width: 90%;
-  justify-content: center;
-  align-items: flex-start;
-  border: 1px solid black;
-}*/
-
-/*.videoContainer {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 54%;
-  margin-right: 0.75rem;
-  border: 1px solid purple;
-}*/
-
-/*.sixtyPercent video {
-  width: 95%;
-  height: auto;*/
-  /*margin: 2rem 0 1.5rem 0;*/
-  /*margin: 1.5rem auto;
-  border: 2px solid yellow;
-}*/
-
-/*.urban h3 {
-  font-family: RalewayBold;
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
-}
-
-.text h2 {
-  padding-bottom: 1.5rem;
-  font-size: 3rem;
-}
-
-.urban p {
-  line-height: 1.2;
-}*/
-
-
-/*.exhibitExamples {
-  display: inline-flex;
-  width: 36%;
-  margin-left: 0.75rem;
-  border: 1px solid brown;
-  flex-direction: column;
-  justify-content: flex-start;
-}*/
-
-/*.fisma,
-.nowthen {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border-top: 0.5px solid grey;
-  border-bottom: 0.5px solid grey;
-}
-
-.fisma img,
-.nowthen img {
-  width: 35%;
-  height: auto;
-  padding: 1rem 1.5rem;
-}*/
 
 /* Footer section */
 
 footer {
-  /*display: flex;
-  justify-content: space-between;*/
   width: 100%;
   height: 20rem;
   background-image: url(../images/books.jpg);
