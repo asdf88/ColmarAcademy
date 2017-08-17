@@ -474,7 +474,13 @@ nav img {
 
 /* Main Information */
 
-.pagesplitterSixtyForty {
+/* Due to the very similar layout structure of the main section
+and the thesis section, I decided to name and style their elements
+in as few groups as possible. Therefore, both sections are basically split
+into two parts, one 60% wide the other 40%, hence the name pageSplitterSixtyForty.
+I also tried to group as many of their media queries as possible. */
+
+.pageSplitterSixtyForty {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,8 +555,8 @@ nav img {
           flex-direction: column;
   width: 40%;
   margin: 0;
-  padding: 0 8px;
-  padding: 0 0.5rem;
+  padding: 24px 8px 0 8px;
+  padding: 1.5rem 0.5rem 0 0.5rem;
 }
 
 .featureBox {
@@ -566,15 +572,17 @@ nav img {
   border-top: 0.5px solid grey;
   border-bottom: 0.5px solid grey;
   border-left: 0.5px solid grey;
-  margin-top: 8px;
-  margin-top: 0.5rem;
+  margin: 0 0 8px 0;
+  margin: 0 0 0.5rem 0;
   padding-right: 16px;
   padding-right: 1rem;
 }
 
 .featureBox:hover {
   background-color: #fcb514;
-  border: 0.5px solid #fcb514;
+  border-top: 0.5px solid #fcb514;
+  border-bottom: 0.5px solid #fcb514;
+  border-left: 0.5px solid #fcb514;
 }
 
 .featureBox img {
@@ -624,7 +632,7 @@ nav img {
 }
 
 @media only screen and (max-width: 1200px) {
-  .pagesplitterSixtyForty {
+  .pageSplitterSixtyForty {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -649,12 +657,16 @@ nav img {
     display: flex;
     width: 80%;
     background-color: #e4e4e4;
-    padding: 0;
+    padding: 1rem 0;
     border: none;
   }
 
   .featureBox {
     background-color: white;
+    border-left: none;
+  }
+
+  .featureBox:hover {
     border-left: none;
   }
 
@@ -674,7 +686,6 @@ nav img {
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
             align-items: center;
-    padding: 1rem 0;
   }
 
   .featureBox {
@@ -1046,7 +1057,7 @@ nav img {
 }
 
 @media only screen and (max-width: 480px) {
-  .thesisExhibit .pagesplitterSixtyForty {
+  .thesisExhibit .pageSplitterSixtyForty {
     background-color: white;
   }
 
@@ -1191,3 +1202,18 @@ footer {
     font-size: 0.75rem;
   }
 }
+
+/* I have two question, I hope you see them.
+The first one is about the course section of the website that is shown
+when the max-width is 480px. As you may have noticed, when one
+hovers over the course name, the course's content switches from display: none
+to display: block. This creates a very choppy and sudden effect. I tried to make the
+course content slide nicely into view by using various transition properties but
+none of them worked. Do you have any idea how one could achieve this using CSS?
+
+My second question is about media queries. For some reason my mobile (LG Nexus 5) displays
+the site intended for devices with a max-width of 1200px rather than 480px regardless whether it's held
+in portrait or landscape orientation. Is there something I have to change on my media query to get my
+mobile to react to it? On my computer all the media queries worked correctly as I minimized the browser. 
+I don't know if it's worth anything, but fyi I tested this website on a 15.6" screen with a screen resolution of
+2880x1620 as well as on a 23" screen with a screen resolution of 1920x1080. */
