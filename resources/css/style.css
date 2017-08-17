@@ -48,24 +48,28 @@ body {
 
 h1 {
   font-family: RalewayExtraBold;
+  font-size: 64px;
   font-size: 4rem;
   color: #4c4c4c;
 }
 
 h2 {
   font-family: RalewayBold;
+  font-size: 32px;
   font-size: 2rem;
   color: #4c4c4c;
 }
 
 h3 {
   font-family: RalewayBold;
+  font-size: 24px;
   font-size: 1.5rem;
   color: #4c4c4c;
 }
 
 h4 {
   font-family: RalewayBold;
+  font-size: 28px;
   font-size: 1.75rem;
   color: black;
 }
@@ -73,6 +77,7 @@ h4 {
 p,
 a {
   font-family: RalewayRegular;
+  font-size: 20px;
   font-size: 1.25rem;
   color: black;
 }
@@ -80,28 +85,42 @@ a {
 /* Header Section */
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: 64px;
   height: 4rem;
   margin: 0;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 3px solid lightgrey;
 }
 
 .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: left;
+  margin: 0 0 0 24px;
   margin: 0 0 0 1.5rem;
   vertical-align: center;
 }
 
 .logo {
   display: inline;
+  height: 40px;
   height: 2.5rem;
   width: auto;
   margin: 0;
+  padding: 0 4px 0 0;
   padding: 0 0.25rem 0 0;
 }
 
@@ -112,24 +131,28 @@ header {
 
 .colmar {
   font-family: AlegreyaSansRegular;
+  font-size: 32px;
   font-size: 2rem;
   color: black;
 }
 
 .academy {
   font-family: AlegreyaSansLight;
+  font-size: 32px;
   font-size: 2rem;
   color: darkgrey;
 }
 
 nav {
   text-align: right;
+  margin: 0 24px 0 0;
   margin: 0 1.5rem 0 0;
 }
 
 nav a {
   text-decoration: none;
   font-family: RalewayMedium;
+  margin: 0 0 0 16px;
   margin: 0 0 0 1rem;
   padding: 0;
   color: black;
@@ -147,11 +170,13 @@ nav img {
   nav a {
     display: none;
   }
+
   nav img {
     display: inline;
     margin: 0 2rem 0 1rem;
     padding: 0;
   }
+
   .academyLogo {
     display: none;
   }
@@ -161,31 +186,45 @@ nav img {
   .brand {
     display: none;
   }
+
   nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 100%;
   }
+
   nav img,
   .academyLogo {
     display: inline;
     margin: 0;
     padding: 0;
   }
+
   header {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 /* Banner */
 
 .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
   width: 100%;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -200,35 +239,46 @@ nav img {
 }
 
 .desktopSloganBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin: 0;
   width: 33%;
   background-color: grey;
   opacity: 0.75;
-  border: 1px solid red;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
 }
 
 .slogan,
 .latinSlogan {
   width: 80%;
   text-align: right;
-  border: 1px solid blue;
 }
 
 .slogan {
+  margin: 64px 48px 32px 0;
   margin: 4rem 3rem 2rem 0;
 }
 
 .latinSlogan,
 .button {
+  margin: 0 48px 64px 0;
   margin: 0 3rem 4rem 0;
 }
 
 .learn {
   color: #fcb514;
+  font-size: 96px;
   font-size: 6rem;
 }
 
@@ -238,20 +288,30 @@ nav img {
   color: white;
 }
 .slogan h1 {
+  font-size: 56px;
   font-size: 3.5rem;
 }
 
 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  width: 240px;
   width: 15rem;
+  height: 56px;
   height: 3.5rem;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fcb514;
 }
 
 .button a {
   font-family: RalewayMedium;
+  font-size: 24px;
   font-size: 1.5rem;
   color: black;
 }
@@ -266,32 +326,45 @@ nav img {
 
 @media only screen and (max-width: 1200px) {
   .banner {
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+                -ms-grid-row-align: flex-end;
+            align-items: flex-end;
     height: 50rem;
   }
+
   .desktopSloganBox {
     width: 100%;
     min-height: 45%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
   }
+
   .slogan,
   .latinSlogan {
     width: 95%;
     margin: 1rem auto;
   }
+
   .button {
     margin: 1rem auto;
     margin-bottom: 2rem;
   }
+
   .slogan h1 {
     font-size: 4rem;
   }
+
   .latinSlogan h2 {
     font-size: 2.5rem;
   }
+
   .learn {
     font-size: 5rem;
   }
+
   .slogan h1,
   .latinSlogan h2 {
     padding: 1rem 0;
@@ -305,9 +378,15 @@ nav img {
   }
 
   .phoneBanner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     height: auto;
     margin: 0;
@@ -326,15 +405,25 @@ nav img {
   }
 
   .phoneSloganBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     padding: 0;
     margin: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #fcb514;
     opacity: 0.75;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
   }
 
   .phoneSloganBox .slogan,
@@ -386,28 +475,40 @@ nav img {
 /* Main Information */
 
 .pagesplitterSixtyForty {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  align-items: flex-start;
-  border: 1px solid blue;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 32px 0;
   padding: 2rem 0;
 }
 
 .sixtyPercent {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 60%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 0;
-  border: 2px solid red;
 }
 
 .mediaMain {
   width: 95%;
   height: auto;
+  margin: 24px auto;
   margin: 1.5rem auto;
-  border: 2px solid yellow;
 }
 
 .text {
@@ -415,44 +516,60 @@ nav img {
   text-align: left;
   padding: 0;
   margin: 1.5 auto;
-  border: 2px solid yellow;
 }
 
 .text h2 {
+  padding-bottom: 24px;
   padding-bottom: 1.5rem;
+  font-size: 48px;
   font-size: 3rem;
 }
 
 .text .quote {
+  font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.4;
   padding: 0;
 }
 
 .source {
+  font-size: 16px;
   font-size: 1rem;
+  padding: 32px 0;
   padding: 2rem 0;
 }
 
 .fortyPercent {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 40%;
-  border-left: 0.5px solid grey;
   margin: 0;
+  padding: 0 8px;
   padding: 0 0.5rem;
-  border: 2px solid green;
 }
 
 .featureBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: 0.5px solid grey;
   border-bottom: 0.5px solid grey;
+  border-left: 0.5px solid grey;
+  margin-top: 8px;
   margin-top: 0.5rem;
+  padding-right: 16px;
   padding-right: 1rem;
-  border: 2px solid red;
 }
 
 .featureBox:hover {
@@ -463,15 +580,21 @@ nav img {
 .featureBox img {
   width: 35%;
   height: auto;
+  padding: 16px 24px;
   padding: 1rem 1.5rem;
-  border: 1px solid yellow;
 }
 
 .what {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid blue;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 55%;
 }
 
@@ -481,12 +604,14 @@ nav img {
 
 .what p {
   font-family: RalewayRegular;
+  padding-top: 20px;
   padding-top: 1.25rem;
   display: block;
   line-height: 1.2;
 }
 
 .what a {
+  padding-top: 20px;
   padding-top: 1.25rem;
   text-decoration: none;
   color: #627aac;
@@ -500,26 +625,44 @@ nav img {
 
 @media only screen and (max-width: 1200px) {
   .pagesplitterSixtyForty {
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background-color: #e4e4e4;
     padding: 1rem 0;
+    border-bottom: 0.5px solid darkgrey;
   }
+
   .sixtyPercent {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 80%;
     background-color: white;
   }
+
   .fortyPercent {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 80%;
-    background: white;
+    background-color: #e4e4e4;
     padding: 0;
+    border: none;
   }
+
+  .featureBox {
+    background-color: white;
+    border-left: none;
+  }
+
   .what h4 {
     font-size: 2rem;
     color: #4c4c4c;
   }
+
   .what p {
     font-size: 1.5rem;
   }
@@ -527,23 +670,38 @@ nav img {
 
 @media only screen and (max-width: 680px) {
   .fortyPercent {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
     padding: 1rem 0;
-    background-color: #e9e9e9;
   }
 
   .featureBox {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
     padding: 0;
     margin-bottom: 0.5rem;
-    background-color: white;
+    border: none;
+  }
+
+  .featureBox:hover {
+    border: none;
   }
 
   .featureBox img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 12rem;
     padding: 0;
@@ -578,16 +736,15 @@ nav img {
     display: none;
   }
 
-  /*.pagesplitterSixtyForty {
-    margin-bottom: 2rem;
-  }*/
-
   .fortyPercent,
   .sixtyPercent {
     width: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
     padding: 1rem 0;
-    background-color: #e9e9e9;
+    background-color: #e4e4e4;
   }
 
   .featureBox {
@@ -595,65 +752,90 @@ nav img {
   }
 
   .featureBox {
+    -webkit-transition: all 0.1s;
     transition: all 0.1s;
   }
 
   .featureBox:hover {
-    transform: scale(1.025);
+    -webkit-transform: scale(1.025);
+            transform: scale(1.025);
     box-shadow: 5px 5px 5px darkgrey;
     background-color: white;
   }
 }
 
 /* Courses */
+
 .phoneCourseContainerBox {
   display: none;
 }
 
 .coursesSection {
   width: 100%;
+  padding: 32px 0;
   padding: 2rem 0;
   background-color: #e4e4e4;
 }
 
 .coursesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 80%;
   margin: 0 auto;
   padding: 0;
-  border: 1px solid red;
 }
 
 .coursesContainer h1 {
+  margin: 40px 0 32px 0;
   margin: 2.5rem 0 2rem 0;
 }
 
 .courseBoxContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   padding: 0;
-  border: 1px solid blue;
-  flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
 }
 
 .courseBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 0;
+  margin: 8px;
   margin: 0.5rem;
-  border: 1px solid green;
   background-color: white;
+  -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  max-width: 31%;
+  max-width: 28%;
+  min-width: 256px;
   min-width: 16rem;
 }
 
 .courseBox:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   box-shadow: 8px 8px 8px darkgrey;
 }
 
@@ -665,17 +847,20 @@ nav img {
 
 .courseDescription {
   padding: 0;
+  margin: 16px 16px 16px;
   margin: 1rem 1rem 1rem;
-  border: 1px solid orange;
 }
 
 .courseDescription h3 {
   font-family: RalewayBold;
+  font-size: 24px;
   font-size: 1.5rem;
+  padding-bottom: 8px;
   padding-bottom: 0.5rem;
 }
 
 .courseDescription p {
+  padding-top: 16px;
   padding-top: 1rem;
   line-height: 1.2;
 }
@@ -714,25 +899,42 @@ nav img {
   }
 
   .phoneCourseContainerBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 90%;
     margin: 0 auto;
     padding: 0;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   .courseDropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     padding: 0;
     margin-bottom: 1rem;
-    background-color: #e9e9e9;
-    border: 1px solid black;
+    background-color: #e4e4e4;
   }
 
   .courseDropdown span {
@@ -740,7 +942,6 @@ nav img {
     color: #4c4c4c;
     font-size: 1.5rem;
     padding: 2rem 0;
-    border: 1px solid red;
   }
 
   .softwareEngineering {
@@ -776,7 +977,6 @@ nav img {
     margin: 0;
     background-size: cover;
     z-index: 1;
-    border: 1px solid green;
   }
 
   .colorSheet {
@@ -784,8 +984,9 @@ nav img {
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: #e9e9e9;
+    background-color: #e4e4e4;
     opacity: 0.75;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
   }
 
   .courseContent p {
@@ -794,7 +995,6 @@ nav img {
     font-family: RalewayBold;
     font-size: 1.5rem;
     color: black;
-    border: 1px solid blue;
   }
 
   .courseDropdown:hover .courseContent {
@@ -820,19 +1020,28 @@ nav img {
 .thesisExhibit {
   width: 100%;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid yellow;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .thesisExhibit h1 {
+  margin: 40px 0 16px 0;
   margin: 2.5rem 0 1rem 0;
 }
 
 .sixtyPercent .text p {
+  font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.2;
+  padding: 12px 0 32px 0;
   padding: 0.75rem 0 2rem 0;
 }
 
@@ -862,34 +1071,50 @@ nav img {
 
 footer {
   width: 100%;
+  height: 320px;
   height: 20rem;
   background-image: url(../images/books.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid white;
   margin: 0;
   padding: 0;
 }
 
 .backgroundColor {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100%;
   background-color: #0039AF;
   opacity: 0.75;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
   margin: 0;
   padding: 0;
 }
 
 .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
   margin-top: 2.5rem;
-  border: 2px solid black;
   padding: 0;
 }
 
@@ -898,6 +1123,7 @@ footer {
 .socialMedia .fa-instagram,
 .socialMedia .fa-youtube {
   color: white;
+  padding: 0 32px;
   padding: 0 2rem;
 }
 
@@ -906,23 +1132,32 @@ footer {
 }
 
 .terms {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid black;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .terms p,
 .terms div {
+  padding: 16px 24px;
   padding: 1rem 1.5rem;
+  font-size: 16px;
   font-size: 1rem;
   color: white;
 }
 
 .terms a {
   text-decoration: none;
+  padding-left: 16px;
   padding-left: 1rem;
+  font-size: 16px;
   font-size: 1rem;
   color: white;
 }
@@ -935,18 +1170,22 @@ footer {
   footer {
     height: 12rem;
   }
+
   .socialMedia .desktop {
     display: none;
   }
+
   .socialMedia .phone {
     display: inline;
   }
+
   .socialMedia .fa-facebook,
   .socialMedia .fa-twitter,
   .socialMedia .fa-instagram,
   .socialMedia .fa-youtube {
     padding: 0 1rem;
   }
+
   .terms p,
   .terms a {
     font-size: 0.75rem;
